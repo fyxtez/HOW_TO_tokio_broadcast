@@ -1,0 +1,12 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.49.0", features = ["full"] }
+central = { path = "../central" }
+publisher = { path = "../publisher" }
+listener1 = { path = "../listener1" }
+listener2 = { path = "../listener2" }
+futures = "0.3"
