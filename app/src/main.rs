@@ -8,7 +8,5 @@
         tokio::spawn(listener1::run(bus.clone()));
         tokio::spawn(listener2::run(bus.clone()));
 
-        println!("TgPulse running");
-
         futures::future::pending::<()>().await;
     }
